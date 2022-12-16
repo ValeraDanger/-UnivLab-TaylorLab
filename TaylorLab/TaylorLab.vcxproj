@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ExtraTools.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="MyMath.c" />
     <ClCompile Include="Structs.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ExtraTools.h" />
     <ClInclude Include="MyMath.h" />
     <ClInclude Include="Structs.h" />
   </ItemGroup>

@@ -24,12 +24,18 @@
     <ClCompile Include="MyMath.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExtraTools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Structs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MyMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtraTools.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
