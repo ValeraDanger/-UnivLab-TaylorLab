@@ -1,4 +1,4 @@
-#include "MyMath.h"
+п»ї#include "MyMath.h"
 
 
 double exp_pr(double x, int terms_count) {
@@ -29,7 +29,7 @@ double cos_pr(double x, int terms_count) {
 }
 
 double ln_pr(double x, int terms_count) {
-	x -= 1; /*Уменьшаем x, т.к. расчет происходит для ln(1+x)*/
+	x -= 1; /*РЈРјРµРЅСЊС€Р°РµРј x, С‚.Рє. СЂР°СЃС‡РµС‚ РїСЂРѕРёСЃС…РѕРґРёС‚ РґР»СЏ ln(1+x)*/
 	double sum = 0, last_numerator = x;
 	for (int i = 1; i <= terms_count; i++) {
 		sum += last_numerator / i;
