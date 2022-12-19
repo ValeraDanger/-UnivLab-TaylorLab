@@ -20,14 +20,14 @@ void printTable(double start_x, double step, int terms_count, int rows_count, do
 		double cur_x = start_x + row_num * step;
 		double cur_func_res = (*OriginalMathFuncPointer)(cur_x);
 		double cur_func_pr_res = (*MyMathFuncPointer)(cur_x, terms_count);
-		double cur_err = cur_func_res - cur_func_pr_res;
+		double cur_err = fabs(cur_func_res - cur_func_pr_res);
 		
-		printf_s("| %lf\t| %lf\t\t| %lf\t\t| %lf\t\t|\n", cur_x, cur_func_res, cur_func_pr_res, cur_err);
+		printf_s("|%14.14g |%22.6g |%22.6g |%23.8e|\n", cur_x, cur_func_res, cur_func_pr_res, cur_err);
 		if (fabs(cur_err) > fabs(max_err)) {
 			max_err = cur_err;
 			max_err_x = cur_x;
 		}
 	}
 	printTableLine(87);
-	printf_s("Максимальная ошибка: %lf, достигается при х = %lf\n", max_err, max_err_x);
+	printf_s("Максимальная ошибка: %e, достигается при х = %lf\n", max_err, max_err_x);
 }
