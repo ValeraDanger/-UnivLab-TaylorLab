@@ -1,4 +1,4 @@
-#include "ExtraTools.h"
+п»ї#include "ExtraTools.h"
 #include <stdio.h>
 #include <math.h>
 
@@ -29,5 +29,5 @@ void printTable(double start_x, double step, int terms_count, int rows_count, do
 		}
 	}
 	printTableLine(87);
-	printf_s("Максимальная ошибка: %e, достигается при х = %lf\n", max_err, max_err_x);
+	printf_s("РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ РѕС€РёР±РєР°: %e, РґРѕСЃС‚РёРіР°РµС‚СЃСЏ РїСЂРё С… = %lf\n", max_err, max_err_x);
 }
